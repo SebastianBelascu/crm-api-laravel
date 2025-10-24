@@ -32,7 +32,7 @@ class OrganizationPolicy
 
     public function update(User $user, Organization $model): bool
     {
-        return false;
+        return true;
     }
 
     public function updateBulk(User $user, Organization $model): bool
@@ -47,6 +47,6 @@ class OrganizationPolicy
 
     public function delete(User $user, Organization $model): bool
     {
-        return false;
+        return true;
     }
 }

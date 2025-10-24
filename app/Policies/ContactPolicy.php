@@ -32,7 +32,7 @@ class ContactPolicy
 
     public function update(User $user, Contact $model): bool
     {
-        return false;
+        return true;
     }
 
     public function updateBulk(User $user, Contact $model): bool
@@ -47,6 +47,6 @@ class ContactPolicy
 
     public function delete(User $user, Contact $model): bool
     {
-        return false;
+        return true;
     }
 }
