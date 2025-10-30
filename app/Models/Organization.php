@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Organization extends Model
 {
+
+    use HasFactory;
     protected $hidden = [
         'name',
         'email',
@@ -17,6 +20,8 @@ class Organization extends Model
         'country',
         'postal_code',
     ];
+
+
 
     public function contacts(): \Illuminate\Database\Eloquent\Relations\HasMany
     {

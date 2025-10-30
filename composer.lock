@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba9f9164f1184d2bf78e58603797d62f",
+    "content-hash": "ba547700bc38d80efc6bb221ebe1d88a",
     "packages": [
         {
             "name": "binaryk/laravel-restify",
-            "version": "10.2.11",
+            "version": "10.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BinarCode/laravel-restify.git",
-                "reference": "8a26d36fefeee8c318f8412e2d4f3608849c4ff0"
+                "reference": "8ae860e13cc628d3e8df9131e23cdcfef78c53d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BinarCode/laravel-restify/zipball/8a26d36fefeee8c318f8412e2d4f3608849c4ff0",
-                "reference": "8a26d36fefeee8c318f8412e2d4f3608849c4ff0",
+                "url": "https://api.github.com/repos/BinarCode/laravel-restify/zipball/8ae860e13cc628d3e8df9131e23cdcfef78c53d2",
+                "reference": "8ae860e13cc628d3e8df9131e23cdcfef78c53d2",
                 "shasum": ""
             },
             "require": {
@@ -87,9 +87,9 @@
             ],
             "support": {
                 "issues": "https://github.com/BinarCode/laravel-restify/issues",
-                "source": "https://github.com/BinarCode/laravel-restify/tree/10.2.11"
+                "source": "https://github.com/BinarCode/laravel-restify/tree/10.3.1"
             },
-            "time": "2025-10-15T09:05:59+00:00"
+            "time": "2025-10-27T18:13:31+00:00"
         },
         {
             "name": "brick/math",

@@ -31,7 +31,7 @@ class UserPolicy
 
     public function update(User $user, User $model): bool
     {
-        return false;
+        return true;
     }
 
     public function updateBulk(User $user, User $model): bool

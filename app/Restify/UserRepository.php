@@ -21,12 +21,14 @@ class UserRepository extends Repository
                 'required' => 'Please enter a name.',
             ]),
             field('name')->required(),
-            field('email')->email()->required(),
+            field('email')->email()->required()->updatingRules('required', 'email')->storingRules('unique:users,email'),
             field('email_verified_at')->datetime()->readonly(),
-            field('password')->password()->required(),
+            field('password')->password()->storingRules('required', 'password'),
             field('remember_token'),
             field('created_at')->datetime()->readonly(),
             field('updated_at')->datetime()->readonly(),
+            field('avatar')->image()->storeAs('avatar.jpg')
+
         ];
     }
 }

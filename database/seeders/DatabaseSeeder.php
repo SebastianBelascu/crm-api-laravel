@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Contact;
+use App\Models\Organization;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -15,7 +17,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+//         User::factory(10)->create();
+        $this->call([
+            ContactSeeder::class,
+            OrganizationSeeder::class,
+        ]);
 
         User::factory()->create([
             'name' => 'Test User',
